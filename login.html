@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body id="login-page">
+    <form action="login.php" method="post" id="frm" onsubmit="return Validation_login();">
+        <table class="login-page-content">
+            <tr class="login-img">
+                <td colspan="2"><img src="images/login-img-removebg-preview.png" class="login-img">
+                </td>
+            </tr>
+            <tr>
+                <td><label class="label">E-mail :</label></td>
+                <td><input type="email" name="email" class="login-input"></td>
+            </tr>
+            <tr>
+                <td><label class="label">Password : </label></td>
+                <td><input type="password" name="user-password" class="login-input"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="login-page-btn"></td>
+                <td><input type="reset" class="login-page-btn"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="validation-msg"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="inscription.html" class="login-page-link">don't have an Account ? Sign Up</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="validation.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Product buying page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="product-order">
+    <form action="commande.php" method="post" onsubmit="return Validation_order()">
+        <table class="product-order-content">
+            <tr>
+                <td rowspan="8" class="product-img-box"><img src="images/image 6.png" class="product-page-img">
+                </td>
+                <td><label class="label">Seller : </label></td>
+                <td><input type="text" name="seller" class="login-input"></td>
+            </tr>
+            <tr>
+                <td><label class="label">Price : </label></td>
+                <td><input type="text" name="price" class="login-input" value="5000" readonly></td>
+            </tr>
+            <tr>
+                <td><label class="label">Ref : </label></td>
+                <td><input type="text" value="M20325" readonly name="ref" class="login-input"></td>
+            </tr>
+            <tr>
+                <td><label class="label">language</label></td>
+                <td>
+                    <label class="label"><input type="radio" name="language" value="Arabic">Arabic<br></label>
+                    <label class="label"><input type="radio" name="language" value="French"> French<br></label>
+                    <label class="label"><input type="radio" name="language" value="English"> English<br></label>
+                    <label class="label"> <input type="radio" name="language" value="German"> German<br></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="languageValidation"></td>
+            </tr>
+            <tr>
+                <td><label class="label">Quantity</label></td>
+                <td><select class="login-input" name="quantity">
+                        <option value="" name="quantity">--Select quantity--</option>
+                        <option value="1" name="quantity">1</option>
+                        <option value="2" name="quantity">2</option>
+                        <option value="3" name="quantity">3</option>
+                        <option value="4" name="quantity">4</option>
+                        <option value="5" name="quantity">5</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td class="quantityValidation" colspan="2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="login-page-btn"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="index.html" class="login-page-link">Back to home</a></td>
+            </tr>
+        </table>
+    </form>
+    <script src="validation.js"></script>
+</body>
+
+
+</html>
