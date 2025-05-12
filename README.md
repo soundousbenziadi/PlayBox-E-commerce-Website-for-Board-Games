@@ -13,33 +13,37 @@ Despite these limitations, PlayBox offers core e-commerce features using only ba
 
 ---
 
-## 📁 Project Structure
+# Project Structure
 
-/PlayBox
-│
-├── images/ # Contains all images used (products, design, etc.)
-├── index.html # Home page showing product cards
-├── login.html # Login form (front-end)
-├── login.php # Login logic (back-end)
-├── inscription.php # User registration form
-├── validation.js # JavaScript for forms validation
-├── commande_produit.html # Product detail page (single product)
-├── commande.php # Handles the order logic
-├── styles.css # Site styling
+PlayBox<br>
+├── images/ (Contains all product and design images )<br>
+├── screenshots/ (Screenshots of various pages)<br>
+├── commande_product.html (Product detail page (single product))<br>
+├── commande.php (Handles order logic)<br>
+├── index.html (Home page showing product cards)<br>
+├── inscription.html (User registration form (front-end))<br>
+├── inscription.php (User registration logic (back-end))<br>
+├── login.html (Login form (front-end))<br>
+├── login.php (Login logic (back-end))<br>
+├── styles.css (Site styling)<br>
+├── validation.js (JavaScript for input validation)<br>
+└── README.md (Project documentation)<br>
+
+---
 
 ## 💻 Technologies Used
 
-- **HTML (with table-based layout)**
-- **CSS** – For custom desktop styling
-- **JavaScript** – Input validation
-- **PHP** – Server-side processing (login, orders, registration)
-- **MySQL** – For managing users and orders (database not included in this repo)
+- **HTML** – Table-based layout structure
+- **CSS** – Custom styling for desktop view
+- **JavaScript** – Form validation
+- **PHP** – Server-side processing (login, registration, orders)
+- **MySQL** – User and order management  
+  _(Database schema not included in this repo)_
 
 ---
 
 ## 📸 Screenshots
 
-```markdown
 ### 🏠 Home Page
 
 ![Home Page](screenshots/screencapture-localhost-PlayBox-index-html-2025-05-12-13_08_23.png)
@@ -48,11 +52,23 @@ Despite these limitations, PlayBox offers core e-commerce features using only ba
 
 ![Login Page](screenshots/screencapture-localhost-PlayBox-login-html-2025-05-12-19_10_50.png)
 
-### 🔐 SignUp Page
+### 📝 Sign Up Page
 
-![Login Page](screenshots/screencapture-localhost-PlayBox-inscription-html-2025-05-12-19_11_05.png)
+![Sign Up Page](screenshots/screencapture-localhost-PlayBox-inscription-html-2025-05-12-19_11_05.png)
 
 ### 🎯 Product Page
 
 ![Product Page](screenshots/screencapture-localhost-PlayBox-commande-produit-html-2025-05-12-19_11_27.png)
-```
+
+---
+
+## 📌 Notes
+
+- This project is optimized **only for desktop resolution**.
+- It follows academic instructions that focus on building from scratch without modern layout tools.
+
+---
+
+## 📚 License
+
+This project was created for academic purposes and is not intended for production use.
