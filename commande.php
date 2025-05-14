@@ -10,10 +10,11 @@ if (isset($_SESSION["First_name"])) {
     $quantity = $_POST["quantity"];
     $query = "INSERT INTO commande_produit(Vendeur_prod,Prix_prod,Ref_prod,Prod_lang,Qant_prod,Id_client)
     VALUES ('$seller','$price','$ref','$language','$quantity','$Client_id');";
-    mysqli_query($link, $query);
-    if ($query) {
+    $result = mysqli_query($link, $query);
+    if ($result) {
         echo "<p style='color:green'>Order placed successfully</p>";
         echo ("<p style='font-size:20px;color:purple;'>Back to <a href='index.html'>Home</a></p><br>");
+        echo ("<p style='font-size:20px;color:red;'><a href='logout.php'>Logout</a></p><br>");
     } else {
         echo "<p style='color:red'>Order failed</p>";
     }
