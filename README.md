@@ -18,7 +18,7 @@ Despite these limitations, PlayBox offers core e-commerce features using only ba
 PlayBox<br>
 ├── images/ (Contains all product and design images )<br>
 ├── screenshots/ (Screenshots of various pages)<br>
-├── commande_product.html (Product detail page (single product))<br>
+├── commande_product.html (Product detail page)<br>
 ├── commande.php (Handles order logic)<br>
 ├── index.html (Home page showing product cards)<br>
 ├── inscription.html (User registration form (front-end))<br>
@@ -35,7 +35,7 @@ PlayBox<br>
 
 - **HTML** – Table-based layout structure
 - **CSS** – Custom styling for desktop view
-- **JavaScript** – Form validation
+- **JavaScript** – Form validation and Product details (changed based on the choosen product)
 - **PHP** – Server-side processing (login, registration, orders)
 - **MySQL** – User and order management  
   _(Database schema not included in this repo)_
