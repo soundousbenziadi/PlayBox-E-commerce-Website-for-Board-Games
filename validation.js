@@ -136,3 +136,25 @@ function Validation_order() {
     }
     return valid;
 }
+//to make card infos change dinamically
+  const params = new URLSearchParams(window.location.search);
+  const imgPath = params.get('img');
+
+  if (imgPath) {
+    document.getElementById('selectedProductImg').src = imgPath;
+  } else {
+    
+    document.getElementById('selectedProductImg').src = 'images/image 6.png';
+  }
+const price = params.get('price');
+if (price) {
+  document.getElementById('productPrice').value = price;
+} else {
+  document.getElementById('productPrice').value = '5000';
+}
+const reference=params.get('ref');
+if (reference) {
+  document.getElementById('productRef').value = reference;
+} else {
+  document.getElementById('productRef').value = 'M20325';
+}

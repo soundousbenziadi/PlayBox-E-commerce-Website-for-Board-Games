@@ -11,18 +11,18 @@
     <form action="commande.php" method="post" onsubmit="return Validation_order()">
         <table class="product-order-content">
             <tr>
-                <td rowspan="8" class="product-img-box"><img src="images/image 6.png" class="product-page-img">
+                <td rowspan="8" class="product-img-box"><img id="selectedProductImg" src="" class="product-page-img">
                 </td>
                 <td><label class="label">Seller : </label></td>
-                <td><input type="text" name="seller" class="login-input"></td>
+                <td><input type="text" name="seller" class="login-input" value="soundous" readonly></td>
             </tr>
             <tr>
                 <td><label class="label">Price : </label></td>
-                <td><input type="text" name="price" class="login-input" value="5000" readonly></td>
+                <td><input type="text" name="price" class="login-input" id="productPrice" value="" readonly></td>
             </tr>
             <tr>
                 <td><label class="label">Ref : </label></td>
-                <td><input type="text" value="M20325" readonly name="ref" class="login-input"></td>
+                <td><input type="text" value="" id="productRef" readonly name="ref" class="login-input"></td>
             </tr>
             <tr>
                 <td><label class="label">language</label></td>
