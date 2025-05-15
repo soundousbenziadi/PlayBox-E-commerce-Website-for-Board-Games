@@ -17,36 +17,25 @@ a{
     background-color: #634ED4;
     height: 60px;
     width: 100vw;
-    padding: 5px 0;
+    padding: 5px;
 }
 .logo{
     height: 40px;
-    display: inline;
 }
 .logo-txt{
-    display: inline;
     font-size: 20px;
     font-family: "Courier New", Courier, monospace;
     font-weight: 800;
     color: aliceblue;
 }
-.login-btn{
-  margin-left: 70%;
-}
-.navbar-content{
-    display: inline;
-}
-.navbar-content-li{
-    display: inline;
-}
+
 .login-btn,.sign-up-btn{
-    display: inline;
     border: none;
     padding: 5px;
     border-radius: 20px;
-    width: 100px;
-    margin-bottom: 1%;
+    width: 90%;
     background-color: #00ffffd1;
+    transition: all 0.6s ease;
 }
 /**Hero Section**/
 .hero-section{
@@ -67,6 +56,10 @@ a{
     height: 400px;
     border-radius: 50% ;
     box-shadow: 0 0 10px #5542c1;
+    transition: all 1s ease;
+}
+.hero-img:hover{
+transform: scale(1.08);
 }
 .home-txt{
     color: aliceblue;
@@ -80,6 +73,10 @@ a{
     background-color: #00ffffd1;
     margin-top: 50px;
     box-shadow: 0 0 20px rgba(22, 11, 76, 0.854);
+    transition: all 0.6s ease;
+}
+.shop-btn:hover ,.price-btn:hover,.login-btn:hover,.sign-up-btn:hover{
+    transform: scale(1.05);
 }
 #show-section{
     
@@ -102,6 +99,7 @@ a{
     margin-top: 1%;
     margin-bottom: 7%;
     box-shadow: 0 0 20px rgb(14, 7, 48);
+    transition: all 0.6s ease;
 }
 .colored-txt{
     color: #00ffffd1;
@@ -214,4 +212,14 @@ a{
 }
 .product-img-box {
     padding-right: 30px;
+}
+/* Footer */
+footer {
+  background-color: #634ED4;
+    width: 100vw;
+    padding: 5px 0;
+}
+.cptxt{
+    text-align: center;
+    color: aliceblue;
 }
