@@ -6,7 +6,7 @@ $result = mysqli_query($link, "SELECT * FROM iclient WHERE Mail_Clt='$email'AND 
 if (mysqli_num_rows($result) > 0) {
     $ligne = mysqli_fetch_row($result);
     echo ("<p style='font-size:20px;color:green;'>Good morning $ligne[1] $ligne[2]</p><br>");
-    echo ("<p style='font-size:20px;color:purple;'>Back to <a href='index.html'>Home</a></p><br>");
+    echo ("<p style='font-size:20px;color:purple;'>Back to <a href='index.html'>Home</a> and place an order </p><br>");
     session_start();
     $_SESSION["Cli_id"] = $ligne[0];
     $_SESSION["Last_name"] = $ligne[1];
